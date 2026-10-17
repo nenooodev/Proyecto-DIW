@@ -61,7 +61,7 @@ Estas funcionalidades podrán evaluarse para futuras versiones, una vez validada
 
 También permitirá comprobar que las reseñas aportan información útil sobre la accesibilidad de los lugares para personas que utilizan silla de ruedas.
 
-**Ficha:** [Ficha de usuario principal](#persona-principal-usuario-de-silla-de-ruedas).
+**Ficha:** [Ficha de usuario principal](#fichas/usuario-principal).
 
 ### Persona secundaria: persona mayor usuaria de andador
 
@@ -73,7 +73,7 @@ También permitirá comprobar que las reseñas aportan información útil sobre 
 
 Asimismo, permitirá evaluar si la clasificación de las reseñas ayuda a identificar las condiciones de accesibilidad experimentadas por otras personas que utilizan andador.
 
-**Ficha:** [Ficha de usuario secundario](#persona-secundaria-persona-mayor-usuaria-de-andador).
+**Ficha:** [Ficha de usuario secundario](#fichas/usuario-secundario).
 
 
 ## 5. Criterios de éxito
