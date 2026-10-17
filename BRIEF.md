@@ -1,4 +1,3 @@
-# BRIEF.md
 # Brief de proyecto: plataforma de rutas y lugares accesibles
 
 ## 1. Descripción del proyecto
