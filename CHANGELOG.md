@@ -17,3 +17,9 @@ Entrevista 2:
 https://share.gemini.google/brPRcrlkzXIb
 
 Para esta entrevista simplemente me limité a pedir una transcripción sin pausas ya que al estar todo en audio era más sencillo, yo simplemente corregí alguna palabra que no estaba bien transcrita y quitar el encabezado
+
+## Asesoría en la paleta de colores
+
+https://chatgpt.com/share/6adfa5a8-d140-83ed-b195-645cdc6cdeda
+
+Una vez tenia la paleta de colores escogida del todo, me surgieron dudas de como combinar bien los azules que habia elegido (ya que los azules son los colores que a mi parecer se asocian más a la movilidad reducida) con el amarillo a modo de complementario, asi que, aunque veia que la paleta tenia un sentido, decidi preguntar a chatgpt por si me hacia visualizarlo mejor
