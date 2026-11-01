@@ -26,6 +26,8 @@ Una vez tenia la paleta de colores escogida del todo, me surgieron dudas de como
 
 ## Ayuda restaurando componentes pre-rediseño
 
-[Transcripción](opencode-chat.md)
+[Transcripción](chats/opencode-chat.md)
 
-Hubo componentes que rediseñé tocando el componente principal, por lo que se cambiaron todas las instancias y el rediseño no se apreciaba. Para no perder el tiempo copiando y pegando del historial de versiones, le pedi a opencode que me ayudara via MCP
+[Transcripción 2](chats/opencode-chat2.md)
+
+Hubo componentes que rediseñé tocando el componente principal, por lo que se cambiaron todas las instancias y el rediseño no se apreciaba. Para no perder el tiempo copiando y pegando del historial de versiones, le pedi a opencode que me ayudara via MCP, en ninguna de estas conversaciones cambié nada ya que la idea era simplemente restaurar algo ya hecho
