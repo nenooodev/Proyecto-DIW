@@ -39,3 +39,8 @@ Hubo componentes que rediseñé tocando el componente principal, por lo que se c
 [Escritorio](https://stitch.withgoogle.com/projects/10305205798995987055)
 
 La mayoría de cambios que he hecho en los rediseños son inspirados por los wireframes que me ha dado Stitch, no he aplicado nada directamente, ya que dichos diseños me parecían sobrecargados, pero es cierto que me ha servido de referencia para saber qué cambiar en ciertos componentes de mi UI, como la sidebar, la barra de búsqueda etc... 
+
+## Ayuda desvinculando componentes usados en los wireframes para hacer cambios independientes en los mockups
+
+[Transcripción](chats/opencode-chat3.md)
+Como tenía muchos componentes ya hechos desde la Órbita 1, dupliqué la hoja y le pedí a opencode que me desvinculara las instancias duplicadas de sus padres, para así poder editar esos componentes en los mockups sin afectar a los wireframes, ya de paso le pedí que me agrupase tanto los componentes del wireframe como los del mockup por atomic design, para no hacerlo yo manualmente.
