@@ -31,3 +31,11 @@ Una vez tenia la paleta de colores escogida del todo, me surgieron dudas de como
 [Transcripción 2](chats/opencode-chat2.md)
 
 Hubo componentes que rediseñé tocando el componente principal, por lo que se cambiaron todas las instancias y el rediseño no se apreciaba. Para no perder el tiempo copiando y pegando del historial de versiones, le pedi a opencode que me ayudara via MCP, en ninguna de estas conversaciones cambié nada ya que la idea era simplemente restaurar algo ya hecho
+
+## Stitch como referente en los rediseños
+
+[Móvil](https://stitch.withgoogle.com/projects/20239359341740460)
+
+[Escritorio](https://stitch.withgoogle.com/projects/10305205798995987055)
+
+La mayoría de cambios que he hecho en los rediseños son inspirados por los wireframes que me ha dado Stitch, no he aplicado nada directamente, ya que dichos diseños me parecían sobrecargados, pero es cierto que me ha servido de referencia para saber qué cambiar en ciertos componentes de mi UI, como la sidebar, la barra de búsqueda etc... 
