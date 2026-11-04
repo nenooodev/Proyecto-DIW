@@ -44,3 +44,10 @@ La mayoría de cambios que he hecho en los rediseños son inspirados por los wir
 
 [Transcripción](chats/opencode-chat3.md)
 Como tenía muchos componentes ya hechos desde la Órbita 1, dupliqué la hoja y le pedí a opencode que me desvinculara las instancias duplicadas de sus padres, para así poder editar esos componentes en los mockups sin afectar a los wireframes, ya de paso le pedí que me agrupase tanto los componentes del wireframe como los del mockup por atomic design, para no hacerlo yo manualmente.
+
+## Ayuda construyendo mockups a partir de estructura wireframes + componentes ya estilizados
+
+[Transcripcion](chats/opencode-chat4.md)
+
+Le pedi a opencode que me construyera los mockups con la misma estructura que el rediseño de los wireframes, utilizando los componentes coloreados en lugar de los blanco y negro, para ahorrar tiempo en calcar las pantallas. Tuve que corregir algunos detalles de color y el prototipado, pero en general estaba bastante bien, ya que simplemente era reconstruir algo ya hecho
+
