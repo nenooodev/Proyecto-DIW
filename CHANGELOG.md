@@ -53,3 +53,26 @@ Como tenía muchos componentes ya hechos desde la Órbita 1, dupliqué la hoja y
 
 Le pedi a opencode que me construyera los mockups con la misma estructura que el rediseño de los wireframes, utilizando los componentes coloreados en lugar de los blanco y negro, para ahorrar tiempo en calcar las pantallas. Tuve que corregir algunos detalles de color y el prototipado, pero en general estaba bastante bien, ya que simplemente era reconstruir algo ya hecho
 
+## Ayuda con instancias anidadas
+
+[Transcripcion](chats/opencode-chat5.md)
+
+Después de la conversación anterior, tuve algunos problemas porque la IA me habia recreado las instancias anidadas como frames, de forma que no veia reflejados los cambios si hacía cambios en el padre, simplemente le pedi que lo corrigiera
+
+## Ayuda con guia de estilos
+
+[Transcripcion](chats/opencode-chat6.md)
+
+Esto es una conversación muy larga que abarca varios dias y bastantes iteraciones por mi parte en la que empiezo pidiendole que me ayude con las descripciones y sintaxis de código de las variables y terminamos componiendo toda la guía de estilos, siempre con la idea de yo ser el que toma las decisiones y la IA el brazo que escribe y lo pone presentable, he retocado sobre todo en la parte de casos de uso de componentes.
+
+## Ayuda con restos
+
+[Transcripcion](chats/opencode-chat7.md)
+
+Aquí le pedí un pequeño checkeo de restos del proyecto porque controlar que todo use variables se me ha hecho bastante trabajoso (especialmente con el spacing) y no quería que se me pasase nada (aun así algo se dejó por el camino)
+
+## Retoques finales
+
+[Transcripcion](chats/opencode-chat8.md)
+
+Aquí le pedí que restaurase las capturas de google maps a su saturación original (para quitar el blanco y negro) para los mockups y que mirase otra vez restos de variables pero esta vez en los wireframes.
