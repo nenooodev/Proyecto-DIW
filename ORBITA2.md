@@ -57,7 +57,42 @@ Uso la Merriweather Sans y Er Mukta, de nuevo, lo detallo mejor en la guía de e
 Base de la escala (4 u 8 píxeles), columnas, medianil y margen de la retícula del dispositivo de tu persona principal.
 base 4, 12 columnas escritorio (16 de margen y 24 medianil) y 4 en movil (16 de margen y medianil), 
 ### Componentes
-Lista de componentes con sus variantes de estado.
+
+#### Átomos
+
+| Componente | Variantes |
+|---|---|
+| **Button** | `Predeterminada`, `hover`, `light`, `light hover`, `light reversed`, `light reversed hover`, `Deactivated` |
+| **Circle Button** | `Predeterminada`, `Variante2` |
+| **Dropdown option** | `Dropdown option`, `Dropdown option hover` |
+| **Input** | `Predeterminada`, `area` |
+| **Star** | `Predeterminada`, `Variante2` |
+| **Tag** | `Acessibility Level Tag`, `Movement Method Tag` |
+
+#### Moléculas
+
+| Componente | Variantes |
+|---|---|
+| **Accesibility Select** | `Open`, `Open_Accesible`, `Open_partially_accessible`, `Open_Not_Accesible`, `Closed_default`, `Closed_accesible`, `Closed_partially_accesible`, `Closed_not_accesible` |
+| **File Input** | `Predeterminada`, `Variante2` |
+| **Info Card Header** | `Predeterminada`, `Variante2` |
+| **Menu Option** | `Predeterminada`, `Variante4`, `Horizontal`, `Horizontal hover` |
+| **Movement Method Select** | `Open`, `Open_Wheelchair`, `Open_Walker`, `Closed`, `Closed_Wheelchair`, `Closed_Walker` |
+| **SearchBar** | `Predeterminada`, `Variante2` |
+| **Accesibility check** | Sin variantes |
+| **Route Indicator** | Sin variantes |
+| **Route Info** | Sin variantes |
+| **StarBar** | Sin variantes |
+
+#### Organismos
+
+| Componente | Variantes |
+|---|---|
+| **Review** | Sin variantes |
+| **Review Form** | `Empty Form`, `Filled Form`, `Error Form` |
+| **Route Selection Panel** | Sin variantes |
+| **Session Modal** | `Predeterminada`, `Sign Up`, `Choose Method` |
+| **Side Option Panel** | Sin variantes |
 
 ### Responsive y modo oscuro
 Qué tuviste que ajustar al pasar la pantalla principal al segundo ancho, y qué corregiste en tus variables al pasar los mockups a modo oscuro.
