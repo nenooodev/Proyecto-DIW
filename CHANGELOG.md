@@ -76,3 +76,9 @@ Aquí le pedí un pequeño checkeo de restos del proyecto porque controlar que t
 [Transcripcion](chats/opencode-chat8.md)
 
 Aquí le pedí que restaurase las capturas de google maps a su saturación original (para quitar el blanco y negro) para los mockups y que mirase otra vez restos de variables pero esta vez en los wireframes.
+
+## Apartado componentes Órbita 2
+
+[Transcripcion](chats/opencode-chat9.md)
+
+Le pedí a la IA que rellenase el apartado de componentes del órbita2.md ya que son muchos componentes para rellenar
