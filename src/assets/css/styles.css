@@ -145,6 +145,11 @@
     --color-error: var(--error-600);
   }
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
@@ -184,6 +189,7 @@ body {
     width: 100%;
     background-color: var(--color-on-surface);
     color: var(--color-secondary);
+    gap: var(--space-4);
     justify-content: space-around;
 }
 .menu_option {
@@ -191,7 +197,8 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: var(--space-3);
-    padding: var(--space-2), var(--space-2);
+    padding: var(--space-2);
+    border-radius: var(--radius-lg);
 }
 .settings__icon {
     width: 24px;
