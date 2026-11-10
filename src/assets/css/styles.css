@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&family=Mukta:wght@400;700&display=swap');
+
+:root {
+  /* ---------------------------------------------------------------------
+     Paletas primitivas
+     --------------------------------------------------------------------- */
+  /* Neutral */
+  --neutral-100: #ffffff;
+  --neutral-200: #f2f2f3;
+  --neutral-400: #cccccc;
+  --neutral-500: #a5a5a5;
+  --neutral-600: #7f807f;
+  --neutral-700: #5a5959;
+  --neutral-900: #363636;
+  --neutral-950: #000000;
+
+  /* Primary */
+  --primary-50: #eeebff;
+  --primary-100: #d5ccff;
+  --primary-200: #b4a3ff;
+  --primary-300: #ba70ff;
+  --primary-400: #613dff;
+  --primary-500: #3b0fff;
+  --primary-600: #2800db;
+  --primary-700: #2100b3;
+  --primary-800: #1a008f;
+  --primary-900: #14006b;
+  --primary-950: #0d0047;
+
+  /* Secondary */
+  --secondary-50: #edf8fd;
+  --secondary-100: #edf8fd;
+  --secondary-200: #ade0f5;
+  --secondary-300: #80ceef;
+  --secondary-400: #5bc0eb;
+  --secondary-500: #25abe4;
+  --secondary-600: #1890c3;
+  --secondary-700: #13759f;
+  --secondary-800: #1a008f;
+  --secondary-900: #14006b;
+  --secondary-950: #0d0047;
+
+  /* Error */
+  --error-400: #e3b8b8;
+  --error-600: #ff8f8f;
+  --error-900: #ff0004;
+
+  /* ---------------------------------------------------------------------
+     Tokens semánticos — modo Light
+     --------------------------------------------------------------------- */
+  --color-primary: var(--primary-400);
+  --color-secondary: var(--secondary-700);
+  --color-surface: var(--neutral-200);
+  --color-on-surface: var(--neutral-100);
+  --color-on-surface-text: var(--neutral-950);
+  --color-on-surface-bg: var(--secondary-100);
+  --color-tag-bg: var(--primary-50);
+  --color-star-bg: var(--neutral-600);
+  --color-on-primary: var(--neutral-100);
+  --color-on-secondary: var(--neutral-100);
+  --color-deactivated: var(--error-400);
+  --color-on-deactivated: var(--neutral-950);
+  --color-error: var(--error-900);
+
+  /* ---------------------------------------------------------------------
+     Tipografía
+     --------------------------------------------------------------------- */
+  --font-family-heading: "Merriweather Sans", sans-serif;
+  --font-family-body: "Mukta", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --font-heading-1: 32px;
+  --font-heading-2: 24px;
+  --font-heading-3: 20px;
+  --font-body: 16px;
+  --font-caption: 14px;
+  --font-label: 14px;
+
+  /* ---------------------------------------------------------------------
+     Border radius
+     --------------------------------------------------------------------- */
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* ---------------------------------------------------------------------
+     Espaciado
+     --------------------------------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ---------------------------------------------------------------------
+     Elevación
+     --------------------------------------------------------------------- */
+
+   --elevation-1:
+    0 4px 8px 0 rgba(0,0,0,0.25),
+    0 -4px 4px 0 rgba(0,0,0,0.2) inset,
+    0 8px 4px 0 rgba(255,255,255, 0.2) inset;
+}
+
+/* -------------------------------------------------------------------------
+   Tokens semánticos — modo Dark
+   ------------------------------------------------------------------------- */
+[data-theme="dark"] {
+  --color-primary: var(--neutral-100);
+  --color-secondary: var(--secondary-200);
+  --color-surface: var(--neutral-900);
+  --color-on-surface: var(--neutral-700);
+  --color-on-surface-text: var(--neutral-100);
+  --color-on-surface-bg: var(--neutral-700);
+  --color-tag-bg: var(--neutral-950);
+  --color-star-bg: var(--neutral-400);
+  --color-on-primary: var(--neutral-950);
+  --color-on-secondary: var(--neutral-950);
+  --color-deactivated: var(--error-400);
+  --color-on-deactivated: var(--neutral-950);
+  --color-error: var(--error-600);
+}
+
+/* Dark automático según preferencia del sistema (se desactiva con data-theme="light") */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-primary: var(--neutral-100);
+    --color-secondary: var(--secondary-200);
+    --color-surface: var(--neutral-900);
+    --color-on-surface: var(--neutral-700);
+    --color-on-surface-text: var(--neutral-100);
+    --color-on-surface-bg: var(--neutral-700);
+    --color-tag-bg: var(--neutral-950);
+    --color-star-bg: var(--neutral-400);
+    --color-on-primary: var(--neutral-950);
+    --color-on-secondary: var(--neutral-950);
+    --color-deactivated: var(--error-400);
+    --color-on-deactivated: var(--neutral-950);
+    --color-error: var(--error-600);
+  }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../home-page.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100dvh;
+    padding-top: 48px;
+}
+.header {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+}
+.search {
+    width: 100%;
+    display: flex;
+    color: var(--color-on-surface-text);
+    background-color: var(--color-surface);
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-2);
+    font-weight: bold;
+    box-shadow: var(--elevation-1);
+    border-radius: var(--radius-sm);
+}
+
+.search__text {
+    font-family: var(--font-family-body);
+    font-size: var(--font-body);
+    font-size: var(--font-weight-bold);
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: var(--color-on-surface);
+    color: var(--color-secondary);
+    justify-content: space-around;
+}
+.menu_option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-3);
+    padding: var(--space-2), var(--space-2);
+}
+.settings__icon {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+
+    background-color: var(--color-secondary);
+
+    mask-image: url("https://api.iconify.design/clarity/settings-solid.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    -webkit-mask-image: url("https://api.iconify.design/clarity/settings-solid.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+}
+.bookmarks__icon {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+
+    background-color: var(--color-secondary);
+
+    mask: url("https://api.iconify.design/at-icons/bookmark.svg")
+         center / contain no-repeat;
+
+    -webkit-mask: url("https://api.iconify.design/at-icons/bookmark.svg")
+         center / contain no-repeat;
+}
+.search__icon {
+    width: 28px;
+    height: 28px;
+    align-self: center;
+
+    background-color: var(--color-on-surface-text);
+
+    mask: url("https://api.iconify.design/basil/search-outline.svg")
+         center / contain no-repeat;
+
+    -webkit-mask: url("https://api.iconify.design/basil/search-outline.svg")
+         center / contain no-repeat;
+}
+.account__icon {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+
+    background-color: var(--color-secondary);
+
+    mask-image: url("https://api.iconify.design/ic/baseline-account-circle.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    -webkit-mask-image: url("https://api.iconify.design/ic/baseline-account-circle.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+}
+.option__text {
+    font-family: var(--font-family-body);
+    font-size: var(--font-label);
+    font-weight: var(--font-weight-bold)
+}
