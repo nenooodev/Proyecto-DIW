@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="color-scheme" content="light dark">
     <title>Document</title>
+    <meta name="description" content="Busca como llegar a tu próximo destino de una forma accesible y sin complicaciones">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="JS/app.js"></script>
 </head>
@@ -11,25 +13,27 @@
     <header class="header">
         <a href="search.html" class="search__container">
             <div class="search">
-                <div class="search__icon"></div>
+                <div class="search__icon" aria-hidden="true"></div>
                 <p class="search__text text-heading-3-bold">¿What's your next destiny?</p>
             </div>
         </a>
     </header>
-    <main class="map"></main>
+    <main class="map" aria-label="Mapa de rutas accesibles"></main>
     <footer class="footer">
-        <figure class="menu_option">
-            <div alt="Settings icon" class="settings__icon"></div>
-            <figcaption class="option__text">Settings</figcaption>
-        </figure>
-        <figure class="menu_option">
-            <div class="bookmarks__icon"></div>
-            <figcaption class="option__text">Bookmarks</figcaption>
-        </figure>
-        <figure class="menu_option">
-            <div class="account__icon"></div>
-            <figcaption class="option__text">Account</figcaption>
-        </figure>
+        <nav class="footer__menu" aria-label="Menú principal">
+            <figure class="menu_option">
+                <div class="settings__icon" aria-hidden="true"></div>
+                <figcaption class="option__text">Settings</figcaption>
+            </figure>
+            <figure class="menu_option">
+                <div class="bookmarks__icon" aria-hidden="true"></div>
+                <figcaption class="option__text">Bookmarks</figcaption>
+            </figure>
+            <figure class="menu_option">
+                <div class="account__icon" aria-hidden="true"></div>
+                <figcaption class="option__text">Account</figcaption>
+            </figure>
+        </nav>
     </footer>
 </body>
 </html>
