@@ -1,0 +1,15 @@
+// settings/_custom-properties.scss
+@use "sass:list";
+@use "tokens" as t;
+
+:root {
+  color-scheme: light dark;
+
+  @each $name, $value in t.$primitives {
+    --#{$name}: #{$value};
+  }
+
+  @each $name, $pair in t.$semantic {
+    --color-#{$name}: light-dark(var(--#{list.nth($pair, 1)}), var(--#{list.nth($pair, 2)}));
+  }
+}

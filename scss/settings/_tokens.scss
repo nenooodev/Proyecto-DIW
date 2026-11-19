@@ -1,0 +1,14 @@
+// settings/_tokens.scss
+$primitives: (
+  "blue-200": #99C1F1,
+  "blue-500": #1A5FB4,
+  "gray-50":  #F6F5F4,
+  "gray-900": #1E1E24,
+);
+
+// Cada semántico: (primitivo en modo claro, primitivo en modo oscuro)
+$semantic: (
+  "primary":    ("blue-500", "blue-200"),
+  "surface":    ("gray-50", "gray-900"),
+  "on-surface": ("gray-900", "gray-50"),
+);
