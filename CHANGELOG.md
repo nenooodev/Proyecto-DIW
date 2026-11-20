@@ -82,3 +82,12 @@ Aquí le pedí que restaurase las capturas de google maps a su saturación origi
 [Transcripcion](chats/opencode-chat9.md)
 
 Le pedí a la IA que rellenase el apartado de componentes del órbita2.md ya que son muchos componentes para rellenar
+
+
+# Órbita 3
+
+## Ayuda maquetando las páginas con más contenido
+
+[Transcripcion](chats/opencode-chat10.md)
+
+Cuando iba por la mitad de una de las 2 páginas de información, decidí pedirle a la ia que siguiera con lo restante, viendo el patrón que ya yo estaba aplicando. Una vez hecha la pagina de información de sitios decidí cederle también la maquetación de la de información de rutas, ya que son 2 páginas muy similares entre sí.
