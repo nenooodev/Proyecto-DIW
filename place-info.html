@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="light dark" />
+        <title>Proyecto DIW | Place Info</title>
+        <meta name="description" content="Información, accesibilidad y reseñas de Bar Manolo." />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="search__back-button" href="index.html" aria-label="Volver"></a>
+            <div class="search">
+                <div class="search__icon" aria-hidden="true"></div>
+                <p class="search__text text-heading-3-bold">Bar Manolo</p>
+            </div>
+        </header>
+
+        <main class="place-info">
+            <section class="place-info__main" aria-labelledby="place-name">
+                <div class="place-info__details">
+                    <h1 class="place-info__name" id="place-name">Bar Manolo</h1>
+                    <p class="place-info__category">
+                        Restaurant - <span class="place-info__score">4</span>
+                        <span class="place-info__star" aria-hidden="true"></span>
+                        <span class="u-visually-hidden">de 5 estrellas</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="place-info__accessibility" aria-label="Indicadores de accesibilidad">
+                <ul class="accessibility-checks">
+                    <li class="accessibility-check">
+                        <span
+                            class="accessibility-check__icon accessibility-check__icon--wheelchair"
+                            aria-hidden="true"
+                        ></span>
+                        <span
+                            class="accessibility-check__status accessibility-check__status--available"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="u-visually-hidden">
+                            Acceso para silla de ruedas: disponible
+                        </span>
+                    </li>
+                    <li class="accessibility-check">
+                        <span
+                            class="accessibility-check__icon accessibility-check__icon--walker"
+                            aria-hidden="true"
+                        ></span>
+                        <span
+                            class="accessibility-check__status accessibility-check__status--available"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="u-visually-hidden">Acceso con andador: disponible</span>
+                    </li>
+                </ul>
+            </section>
+
+            <form class="review-form" aria-label="Escribir una reseña" method="post">
+                <div class="review-form__selectors">
+                    <label class="review-form__field">
+                        <span class="u-visually-hidden">Filtro de accesibilidad</span>
+                        <select class="review-form__select" name="accessibility">
+                            <option value="" selected>Accessibility</option>
+                            <option value="none">None</option>
+                            <option value="accessible">Accessible</option>
+                            <option value="partially-accessible">Partially accessible</option>
+                            <option value="not-accessible">Not accessible</option>
+                        </select>
+                    </label>
+
+                    <label class="review-form__field">
+                        <span class="u-visually-hidden">Método de desplazamiento</span>
+                        <select class="review-form__select" name="movement-method">
+                            <option value="" selected>Movement Method</option>
+                            <option value="none">None</option>
+                            <option value="wheelchair">Wheelchair</option>
+                            <option value="walker">Walker</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="review-form__body">
+                    <label class="review-form__field review-form__field--comment">
+                        <span class="u-visually-hidden">Tu reseña</span>
+                        <textarea
+                            class="review-form__comment"
+                            name="review"
+                            rows="3"
+                            placeholder="Write your review..."
+                        ></textarea>
+                    </label>
+
+                    <div class="review-form__actions">
+                        <fieldset class="star-bar">
+                            <legend class="u-visually-hidden">Puntuación</legend>
+                            <input
+                                class="star-bar__input"
+                                type="radio"
+                                name="rating"
+                                id="rating-1"
+                                value="1"
+                            />
+                            <label class="star-bar__star" for="rating-1">
+                                <span class="u-visually-hidden">1 estrella</span>
+                            </label>
+                            <input
+                                class="star-bar__input"
+                                type="radio"
+                                name="rating"
+                                id="rating-2"
+                                value="2"
+                            />
+                            <label class="star-bar__star" for="rating-2">
+                                <span class="u-visually-hidden">2 estrellas</span>
+                            </label>
+                            <input
+                                class="star-bar__input"
+                                type="radio"
+                                name="rating"
+                                id="rating-3"
+                                value="3"
+                            />
+                            <label class="star-bar__star" for="rating-3">
+                                <span class="u-visually-hidden">3 estrellas</span>
+                            </label>
+                            <input
+                                class="star-bar__input"
+                                type="radio"
+                                name="rating"
+                                id="rating-4"
+                                value="4"
+                            />
+                            <label class="star-bar__star" for="rating-4">
+                                <span class="u-visually-hidden">4 estrellas</span>
+                            </label>
+                            <input
+                                class="star-bar__input"
+                                type="radio"
+                                name="rating"
+                                id="rating-5"
+                                value="5"
+                            />
+                            <label class="star-bar__star" for="rating-5">
+                                <span class="u-visually-hidden">5 estrellas</span>
+                            </label>
+                        </fieldset>
+
+                        <button class="button button--publish" type="submit">Publish</button>
+                    </div>
+                </div>
+            </form>
+
+            <section class="reviews" aria-labelledby="reviews-title">
+                <h2 class="reviews__title u-visually-hidden" id="reviews-title">Reseñas</h2>
+
+                <article class="review" aria-labelledby="review-author-1">
+                    <header class="review__header">
+                        <div class="review__author">
+                            <span class="review__avatar" aria-hidden="true"></span>
+                            <h3 class="review__name" id="review-author-1">Manolo</h3>
+                        </div>
+                        <p class="review__rating">
+                            <span class="review__score">5</span>
+                            <span class="review__star" aria-hidden="true"></span>
+                            <span class="u-visually-hidden">de 5 estrellas</span>
+                        </p>
+                    </header>
+
+                    <ul class="review__tags">
+                        <li class="tag tag--primary">Accessible</li>
+                        <li class="tag tag--secondary">Wheelchair</li>
+                    </ul>
+
+                    <p class="review__text">mi bar es 100% accesible,hago la berza mu wena</p>
+                </article>
+
+                <article class="review" aria-labelledby="review-author-2">
+                    <header class="review__header">
+                        <div class="review__author">
+                            <span class="review__avatar" aria-hidden="true"></span>
+                            <h3 class="review__name" id="review-author-2">Lola</h3>
+                        </div>
+                        <p class="review__rating">
+                            <span class="review__score">3</span>
+                            <span class="review__star" aria-hidden="true"></span>
+                            <span class="u-visually-hidden">de 5 estrellas</span>
+                        </p>
+                    </header>
+
+                    <ul class="review__tags">
+                        <li class="tag tag--primary">Accessible</li>
+                        <li class="tag tag--secondary">Walker</li>
+                    </ul>
+
+                    <p class="review__text">Buen sitio, volveré.</p>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
