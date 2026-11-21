@@ -1,14 +1,64 @@
 // settings/_tokens.scss
+// Design tokens extraídos de Figma (archivo "Proyecto-DIW").
+// Fuente de verdad para los colores; _custom-properties.scss los emite como custom properties CSS.
+
+// Colores primitivos — escalas de Figma, idénticas en modo claro y oscuro.
 $primitives: (
-  "blue-200": #99C1F1,
-  "blue-500": #1A5FB4,
-  "gray-50":  #F6F5F4,
-  "gray-900": #1E1E24,
+  // Escala Neutral
+  "neutral-100": #FFFFFF,
+  "neutral-200": #F2F2F3,
+  "neutral-400": #CCCCCC,
+  "neutral-500": #A5A5A5,
+  "neutral-600": #7F807F,
+  "neutral-700": #5A5959,
+  "neutral-900": #363636,
+  "neutral-950": #000000,
+
+  // Escala Primary
+  "primary-50": #EEEBFF,
+  "primary-100": #D5CCFF,
+  "primary-200": #B4A3FF,
+  "primary-300": #BA70FF,
+  "primary-400": #613DFF,
+  "primary-500": #3B0FFF,
+  "primary-600": #2800DB,
+  "primary-700": #2100B3,
+  "primary-800": #1A008F,
+  "primary-900": #14006B,
+  "primary-950": #0D0047,
+
+  // Escala Secondary
+  "secondary-50": #EDF8FD,
+  "secondary-100": #EDF8FD,
+  "secondary-200": #ADE0F5,
+  "secondary-300": #80CEEF,
+  "secondary-400": #5BC0EB,
+  "secondary-500": #25ABE4,
+  "secondary-600": #1890C3,
+  "secondary-700": #13759F,
+  "secondary-800": #1A008F,
+  "secondary-900": #14006B,
+  "secondary-950": #0D0047,
+
+  // Escala Error
+  "error-400": #E3B8B8,
+  "error-600": #FF8F8F,
+  "error-900": #FF0004,
 );
 
 // Cada semántico: (primitivo en modo claro, primitivo en modo oscuro)
 $semantic: (
-  "primary":    ("blue-500", "blue-200"),
-  "surface":    ("gray-50", "gray-900"),
-  "on-surface": ("gray-900", "gray-50"),
+  "primary":         ("primary-400", "neutral-100"),
+  "secondary":       ("secondary-700", "secondary-200"),
+  "surface":         ("neutral-200", "neutral-900"),
+  "on-surface":      ("neutral-100", "neutral-700"),
+  "on-surface-text": ("neutral-950", "neutral-100"),
+  "on-surface-bg":   ("secondary-50", "neutral-700"),
+  "on-primary":      ("neutral-100", "neutral-950"),
+  "on-secondary":    ("neutral-100", "neutral-950"),
+  "tag-bg":          ("primary-50", "neutral-950"),
+  "star-bg":         ("neutral-600", "neutral-400"),
+  "deactivated":     ("error-400", "error-400"),
+  "on-deactivated":  ("neutral-950", "neutral-950"),
+  "error":           ("error-900", "error-600"),
 );

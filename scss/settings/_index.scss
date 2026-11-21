@@ -1,0 +1,6 @@
+// settings/_index.scss
+@forward "tokens";
+@forward "variables";
+
+// Emite las custom properties CSS (:root) a partir de los mapas de color.
+@use "custom-properties";

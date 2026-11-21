@@ -1,0 +1,33 @@
+// settings/_variables.scss
+// Variables SCSS (no son colores semánticos, que van como custom properties CSS).
+// Todos los valores en px se convierten a rem con la función preparada.
+@use "../tools/functions" as f;
+
+// Espaciados — escala de Figma basada en 4px.
+$space-1: f.rem(4px); // 0.25rem
+$space-2: f.rem(8px); // 0.5rem
+$space-3: f.rem(12px); // 0.75rem
+$space-4: f.rem(16px); // 1rem
+$space-5: f.rem(20px); // 1.25rem
+$space-6: f.rem(24px); // 1.5rem
+$space-8: f.rem(32px); // 2rem
+$space-12: f.rem(48px); // 3rem
+$space-16: f.rem(64px); // 4rem
+
+// Radio de bordes
+$radius-none: 0;
+$radius-md: f.rem(8px); // 0.5rem
+$radius-lg: f.rem(16px); // 1rem
+$radius-full: f.rem(9999px); // 624.9375rem
+
+// Tamaños de fuente (colección "Font size" de Figma)
+$font-heading-1: f.rem(32px); // 2rem — título principal del perfil
+$font-heading-2: f.rem(24px); // 1.5rem — nombre de lugares y rutas
+$font-heading-3: f.rem(20px); // 1.25rem — usuario, categorías, rating
+$font-body: f.rem(16px); // 1rem — texto principal
+$font-label: f.rem(14px); // 0.875rem — texto de botones
+$font-caption: f.rem(14px); // 0.875rem — anotaciones y textos auxiliares
+
+// Anchura de lienzo / breakpoints (variable "Width" de Figma)
+$width-mobile: f.rem(400px); // 25rem
+$width-desktop: f.rem(1200px); // 75rem
