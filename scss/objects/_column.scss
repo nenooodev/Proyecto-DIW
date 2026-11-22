@@ -1,0 +1,20 @@
+.o-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);   
+    padding-top: var(--space-12);
+}
+.o-column_auto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: var(--space-12);
+    gap: var(--space-2);
+}
+.o-column_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-4) 0;
+    gap: var(--space-4);
+}

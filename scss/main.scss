@@ -1,7 +1,12 @@
-// main.scss: un adelanto de la estructura de ITCSS
-@use "settings";     // tokens y mapas
-@use "generic";      // reset
-@use "elements";     // estilos de las etiquetas
-@use "objects";      // patrones de colocación: .o-stack, .o-grid...
-@use "components";   // .button, .card, .slot...
-@use "utilities";    // clases de ayuda: .u-visually-hidden...
+// main.scss
+@use "sass:meta";
+
+@layer settings, generic, elements, objects, components, utilities;
+
+@layer settings   { @include meta.load-css("settings/custom-properties"); }
+@layer generic    { @include meta.load-css("generic/reset"); }
+@layer elements   { @include meta.load-css("elements/headings"); @include meta.load-css("elements/body");  }
+@layer objects    { @include meta.load-css("objects/footer"); /* ... */ }
+/*@layer components { @include meta.load-css("components/index"); }
+@layer utilities  { @include meta.load-css("utilities/visually-hidden"); }
+*/
