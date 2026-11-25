@@ -3,3 +3,6 @@
     0 -4px 4px 0 $color-2 inset,
     0 8px 4px 0 $color-3 inset;
 }
+@mixin elevation-0 {
+    box-shadow: 0 0 4 inset;
+}
