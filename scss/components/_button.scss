@@ -1,0 +1,16 @@
+@use "../tools/mixins" as *;
+@use "../settings/variables" as *;
+.button {
+--button-bg: var(--color-primary);
+--button-fg: var(--color-on-surface);
+background-color: var(--button-bg);
+color: var(--button-fg);
+padding: $space-2;
+border-radius: $radius-md;
+font-size: $font-label;
+font-weight: bold;
+@include elevation-1;
+&:hover {@include elevation-0}
+&--light {background-color: var(--color-secondary);}
+&--light:hover {}
+}
