@@ -94,8 +94,41 @@
   }
   /* ... */
 }
-/*@layer components { @include meta.load-css("components/index"); }
-@layer utilities  { @include meta.load-css("utilities/visually-hidden"); }
-*/
+@layer components {
+  .button {
+    --button-bg: var(--color-primary);
+    --button-fg: var(--color-on-surface);
+    width: fit-content;
+    background-color: var(--button-bg);
+    color: var(--button-fg);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 -4px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 8px 4px 0 rgba(255, 255, 255, 0.2) inset;
+  }
+  .button:hover {
+    box-shadow: 0 0 4 rgba(0, 0, 0, 0.2) inset;
+  }
+  .button--light {
+    background-color: var(--color-secondary);
+  }
+  .button:hover {
+    box-shadow: 0 0 4 rgba(0, 0, 0, 0.2) inset;
+  }
+  .button--reversed {
+    background-color: var(--color-on-surface);
+    color: var(--color-secondary);
+  }
+  .button--reversed:hover {
+    box-shadow: 0 0 4 rgba(0, 0, 0, 0.2) inset;
+  }
+  .button--disabled {
+    background-color: var(--disabled);
+    color: var(--color-on-surface-text);
+  }
+}
+/*@layer utilities  { @include meta.load-css("utilities/visually-hidden"); }*/
+@layer tools {}
 
 /*# sourceMappingURL=main.css.map */
