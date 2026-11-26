@@ -3,6 +3,7 @@
 .button {
 --button-bg: var(--color-primary);
 --button-fg: var(--color-on-surface);
+width: fit-content;
 background-color: var(--button-bg);
 color: var(--button-fg);
 padding: $space-2;
