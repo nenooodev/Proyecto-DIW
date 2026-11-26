@@ -12,5 +12,8 @@ font-weight: bold;
 @include elevation-1;
 &:hover {@include elevation-0}
 &--light {background-color: var(--color-secondary);}
-&--light:hover {}
+&:hover {@include elevation-0}
+&--reversed {background-color: var(--color-on-surface); color: var(--color-secondary);}
+&--reversed:hover {@include elevation-0}
+&--disabled {background-color: var(--disabled); color: var(--color-on-surface-text);}
 }
